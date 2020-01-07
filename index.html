@@ -5,30 +5,111 @@ https://geishoui.github.io/rpstry/
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <title>はじめてのBootstrap4</title>
- 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
-  
-    <div class="d">
-      <form method="post" action="example.cgi">
-        <div class="btn-group" data-toggle="buttons">
-	        <label class="btn btn-danger">
-		        <input type="radio" autocomplete="off" name="entry.552251982" jsname="L9xHkb" value="A">Ａ
-	        </label>
-	        <label class="btn btn-primary">
-		        <input type="radio" autocomplete="off" name="entry.552251982" jsname="L9xHkb" value="B">Ｂ
-	        </label>
-        </div>
+	<style type="text/css">
+		body {
+			word-wrap: break-word;
+		}
+	</style>
+	<meta charset="utf-8">
+	<title>メイプラー格付けチェック2020</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
 
-        
-      </form>
-    </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body style="font-family: 'Sawarabi Mincho'; background-color:rgb(247, 202, 88);">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10 mx-auto">
+				<form method="POST" target="_self" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfbT3XS4NB9BnlL5hxsijY7vUGpK7ufhgmsUtWUxrLxfLB9gw/formResponse">
+					<div id="entry1">
+						<h1>第1問目　楽器<span class="h3">難易度：★★★★★</span></h1>
+						<p>高級なクラリネットはどちらでしょう。<br>
+						一つはトライアにてメルで購入できる[練習用クラリネット]<br>
+						もう一つはメロットでのみ購入できる[アリアンクラシッククラリネット]です。</p>
+						<div class="row mx-auto" data-toggle="buttons" onclick="onChanged(1)">
+							<div class="btn btn-danger col-md-6">
+								<video controls width="100%" src="https://geishoui.github.io/rpstry/%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/1%E5%95%8F%E7%9B%AE/%E6%BC%94%E5%A5%8FA.mp4"></video>
+									<input type="radio" name="entry.1663222413" value="A">A</div>
+							<div class="btn btn-primary col-md-6" onclick="onChanged(1)">
+								<video controls width="100%" src="https://geishoui.github.io/rpstry/%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/1%E5%95%8F%E7%9B%AE/%E6%BC%94%E5%A5%8FA.mp4"></video>
+									<input type="radio" name="entry.1663222413" value="B">B</div>
+						</div>
+						<button type="button" id="btn1" class="btn btn-success" onclick="clickBtn(1)" disabled>解答する</button>
+					</div>
+
+					<div id="entry2">
+						<h1>第2問目　工芸<span class="h3">難易度：★★★★☆</span></h1>
+						<p>日頃の冒険の観察眼をチェックさせていただきます。<br>
+						より攻撃力の高い高級装備を選んでください。</p>
+						<div class="row mx-auto" data-toggle="buttons" onclick="onChanged(2)">
+							<div class="btn btn-danger col-md-6">
+								<img style="width: 100%;" src="https://github.com/geishoui/rpstry/blob/gh-pages/%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/2%E5%95%8F%E7%9B%AE/buki_a01.png?raw=true">
+									<input type="radio" name="entry.802879957" value="A">A</div>
+							<div class="btn btn-primary col-md-6" onclick="onChanged(2)">
+								<img style="width: 100%;" src="https://github.com/geishoui/rpstry/blob/gh-pages/%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/2%E5%95%8F%E7%9B%AE/buki_b01.png?raw=true">
+									<input type="radio" name="entry.802879957" value="B">B</div>
+						</div>
+						<button type="button" id="btn2" class="btn btn-success" onclick="clickBtn(2)" disabled>解答する</button>
+					</div>
+
+					<div id="entry3">
+						<h1>第3問目　絵画<span class="h3">難易度：★★★☆☆</span></h1>
+						<p>UKS観光協会のイメージロゴを作成していただきました。<br>
+							テーマは『神聖で美しい神宿る地』です。<br>
+							一つは有名UGC作家であるこめまる先生の作品、<br>
+							もう一つはギルドメンバーの作品です。</p>
+						<div class="row mx-auto" data-toggle="buttons" onclick="onChanged(3)">
+							<div class="btn btn-danger col-md-6">
+								<img style="width: 100%;" src="https://github.com/geishoui/rpstry/blob/gh-pages/%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/3%E5%95%8F%E7%9B%AE/20200106_1894.png?raw=true">
+									<input type="radio" name="entry.454366046" value="A">A</div>
+							<div class="btn btn-primary col-md-6" onclick="onChanged(3)">
+								<img style="width: 100%;" src="https://github.com/geishoui/rpstry/blob/gh-pages/%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/3%E5%95%8F%E7%9B%AE/20200106_1895.png?raw=true">
+									<input type="radio" name="entry.454366046" value="B">B</div>
+						</div>
+						<button type="button" id="btn3" class="btn btn-success" onclick="clickBtn(3)" disabled>解答する</button>
+					</div>
+
+					<div id="entry4">
+						<h1>第2問目　工芸<span class="h3">難易度：★★★★☆</span></h1>
+						<p>日頃の冒険の観察眼をチェックさせていただきます。<br>
+						より攻撃力の高い高級装備を選んでください。</p>
+						<div class="row mx-auto" data-toggle="buttons" onclick="onChanged(4)">
+							<div class="btn btn-danger col-md-6">
+								<img style="width: 100%;" src="https://github.com/geishoui/rpstry/blob/gh-pages/%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/4%E5%95%8F%E7%9B%AE/20200106_1896.png?raw=true">
+									<input type="radio" name="entry.1244762362" value="A">A</div>
+							<div class="btn btn-primary col-md-6" onclick="onChanged(4)">
+								<img style="width: 100%;" src="https://github.com/geishoui/rpstry/blob/gh-pages/%E6%A0%BC%E4%BB%98%E3%81%91%E7%AD%94%E3%81%88%E5%90%88%E3%82%8F%E3%81%9B/4%E5%95%8F%E7%9B%AE/20200106_1899.png?raw=true">
+									<input type="radio" name="entry.1244762362" value="B">B</div>
+						</div>
+						<button type="submit" id="btn4" class="btn btn-success" disabled>☆結果発表☆</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		function onChanged(n){
+			document.getElementById('btn'+n).disabled = false;
+		}
+		document.getElementById('entry2').style.display = "none";
+		document.getElementById('entry3').style.display = "none";
+		document.getElementById('entry4').style.display = "none";
+		function clickBtn(m){
+			document.getElementById('entry'+m).style.display = "none";
+			document.getElementById('entry'+(m+1)).style.display = "block";
+		}
+	</script>
+	
+
 </body>
 </html>
