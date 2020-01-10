@@ -1,3 +1,6 @@
+body {
+    word-wrap: break-word;
+}
 h1 {
     position: relative;
     padding: 0.5em 1em;
@@ -38,4 +41,12 @@ button {
     padding:1em;
     border-radius: 0.5em;
     background-color: #eee;
+}
+#results .desc, #rank_name {
+    font-size: 1.5em;
+}
+#rank_name {
+    color: brown;
+    font-weight: bold;
+    padding: 0 10px;
 }
